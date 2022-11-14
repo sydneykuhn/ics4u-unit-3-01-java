@@ -36,7 +36,8 @@ final class Main {
         if (aString.length() == 0) {
             returnValue = aString;
         } else {
-            returnValue = reverseString(aString.substring(1)) + (aString.charAt(0));
+            returnValue = reverseString(
+              aString.substring(1)) + (aString.charAt(0));
         }
         return returnValue;
 
@@ -49,13 +50,13 @@ final class Main {
     */
     public static void main(final String[] args) {
         // Input
-	// This will be the string that is reversed
-	final String aString = "recursion";
+        // This will be the string that is reversed
+        final String aString = "recursion";
 
-	// Process
+        // Process
         final String reversedString = reverseString(aString);
 
-	// Output
+        // Output
         System.out.println("\nThe original string is: " + aString);
         System.out.println("The reversed string is: " + reversedString);
 
